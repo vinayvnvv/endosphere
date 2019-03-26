@@ -1,0 +1,115 @@
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.display-none {
+  display: none; }
+
+.display-none-strict {
+  display: none !important; }
+
+.text-success {
+  color: #0f7b0c; }
+
+.text-warning {
+  color: #f44336; }
+
+.text-info {
+  color: #2196f3; }
+
+.flex {
+  display: flex; }
+
+.flex-column {
+  flex-direction: column; }
+
+.inline-flex {
+  display: inline-flex; }
+
+.flex-align-center {
+  align-items: center; }
+
+.flex-justify-center {
+  justify-content: center; }
+
+.flex-center {
+  align-items: center;
+  justify-content: center; }
+
+.flex-justify-end {
+  justify-content: flex-end; }
+
+.flex-justify-start {
+  justify-content: flex-start; }
+
+.flex-justify-space-between {
+  justify-content: space-between; }
+
+.flex-align-end {
+  align-items: flex-end; }
+
+.flex-align-start {
+  align-items: flex-start; }
+
+.dialog {
+  background-color: #ffffff;
+  position: absolute;
+  outline: none;
+  padding: 21px;
+  max-width: 500px;
+  border-radius: 11px;
+  font-family: "Roboto", sans-serif;
+  z-index: 999;
+  animation: zoomIn 0.23s ease-in-out; }
+  @media screen and (max-width: 960px) {
+    .dialog {
+      max-width: 80%; } }
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0000007d;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.dialog-msg > ._ttl {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000; }
+  @media screen and (max-width: 960px) {
+    .dialog-msg > ._ttl {
+      font-size: 18px;
+      font-weight: 500; } }
+
+.dialog-msg > ._desc {
+  margin-top: 9px;
+  color: #444444; }
+  @media screen and (max-width: 960px) {
+    .dialog-msg > ._desc {
+      font-size: 13px; } }
+
+.dialog-msg > ._actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 19px; }
+  .dialog-msg > ._actions > button {
+    margin-left: 5px; }
+
+.error-content {
+  color: #f44336;
+  font-size: 14px;
+  margin: 3px 0px;
+  font-weight: 500; }
+
+.link {
+  color: #3b5998;
+  cursor: pointer; }
+  .link.disabled {
+    pointer-events: none; }

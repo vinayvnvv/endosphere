@@ -1,0 +1,4 @@
+.Index > ._banner {
+  height: calc(100vh - 62px);
+  background-color: #f6f6f6;
+  overflow: hidden; }

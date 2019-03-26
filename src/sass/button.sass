@@ -1,0 +1,44 @@
+@import './util/vars.sass'
+$size-normal: 34px
+.btn
+    background-color: $cent
+    border: none
+    outline: none
+    font-family: $font
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    padding: 0px
+    max-height: $size-normal
+    min-height: $size-normal
+    height: $size-normal
+    padding: 0 21px
+    border-radius: 50em
+    cursor: pointer
+    color: #3f618ee8
+    font-weight: 500
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15)
+    transition: 0.0723s all ease-in-out
+    text-decoration: none
+    font-size: 14px
+    &:hover
+        background-color: transparentize($cent, 0.6)
+    &.is-light
+        background-color: #ffffff
+        color: #777777
+        &:hover
+            background-color: #f9f9f9
+    &.is-outline
+        background-color: transparent
+        box-shadow: 0px 0px 0px 1px $cent
+    &.disabled
+        pointer-events: none
+    &.transparent:not(.no-transparent)
+        background-color: transparent
+        border-color: transparent
+        box-shadow: none
+    &:active
+        box-shadow: 0 1px 7px 1px rgba(0,0,0,0.15)
+    &>.btn-icon-left
+        margin-right: 5px
+        font-size: 18px

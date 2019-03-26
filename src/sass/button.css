@@ -1,0 +1,42 @@
+.btn {
+  background-color: #d2e3fc;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  max-height: 34px;
+  min-height: 34px;
+  height: 34px;
+  padding: 0 21px;
+  border-radius: 50em;
+  cursor: pointer;
+  color: #3f618ee8;
+  font-weight: 500;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  transition: 0.0723s all ease-in-out;
+  text-decoration: none;
+  font-size: 14px; }
+  .btn:hover {
+    background-color: rgba(210, 227, 252, 0.4); }
+  .btn.is-light {
+    background-color: #ffffff;
+    color: #777777; }
+    .btn.is-light:hover {
+      background-color: #f9f9f9; }
+  .btn.is-outline {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 1px #d2e3fc; }
+  .btn.disabled {
+    pointer-events: none; }
+  .btn.transparent:not(.no-transparent) {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none; }
+  .btn:active {
+    box-shadow: 0 1px 7px 1px rgba(0, 0, 0, 0.15); }
+  .btn > .btn-icon-left {
+    margin-right: 5px;
+    font-size: 18px; }

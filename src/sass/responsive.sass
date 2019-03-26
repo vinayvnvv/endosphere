@@ -1,0 +1,48 @@
+@import './util/mixins.sass'
+
+.only-mobile
+	display: none
++media-only-mobile
+	.only-mobile
+		display: block
+
+.only-mobile-strict
+	display: none!important
++media-only-mobile
+	.only-mobile-strict
+		display: block!important
+
+.only-mobile-inline
+	display: none
++media-only-mobile
+	.only-mobile-inline
+		display: inline-block
+
+.only-mobile-inline-strict
+	display: none!important
++media-only-mobile
+	.only-mobile-inline-strict
+		display: inline-block!important
+
+.only-mobile-inline-flex-strict
+	display: none!important
++media-only-mobile
+	.only-mobile-inline-flex-strict
+		display: inline-flex!important
+
+.only-desktop
+	display: block
++media-only-mobile
+	.only-desktop
+		display: none
+
+.only-desktop-strict
+	display: block!important
++media-only-mobile
+	.only-desktop-strict
+		display: none!important
+
+.flex-grow-mobile
+	+media-only-mobile
+		flex-grow: 1
+		flex-flow: 1

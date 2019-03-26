@@ -1,0 +1,34 @@
+@import 'vars.sass'
+=media-xs
+  @media screen and (max-width: ($mediaquery-xs - 1))
+    @content
+=media-gt-xs
+  @media screen and (min-width: $mediaquery-xs)
+    @content
+=media-sm
+  @media screen and (min-width: $mediaquery-xs) and (max-width: ($mediaquery-sm - 1))
+    @content
+=media-gt-sm
+  @media screen and (min-width: $mediaquery-sm)
+    @content
+=media-md
+  @media screen and (min-width: $mediaquery-sm) and (max-width: ($mediaquery-md - 1))
+    @content
+=media-gt-md
+  @media screen and (min-width: $mediaquery-md)
+    @content
+=media-lg
+  @media screen and (min-width: $mediaquery-md) and (max-width: ($mediaquery-lg - 1))
+    @content
+=media-gt-lg
+  @media screen and (min-width: $mediaquery-lg)
+    @content
+=media-xl
+  @media screen and (min-width: $mediaquery-lg)
+    @content
+=media-only-mobile
+  @media screen and (max-width: $mediaquery-sm)
+    @content
+=media-only-desktop
+  @media screen and (min-width: ($mediaquery-sm + 1))
+    @content

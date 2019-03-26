@@ -1,0 +1,33 @@
+@import './util/vars.sass'
+$input-padding-x: 11px
+.input
+    outline: none
+    box-shadow: 0px 0px 0px 1px #d9d9d9
+    border: none
+    height: 37px
+    border-radius: 5px
+    transition: 0.134s all ease-in
+    font-size: 15px
+    font-family: $font
+    padding: 0 11px
+    width: calc(100% - #{$input-padding-x * 2})
+    &:focus
+        box-shadow: 0px 0px 0px 2px $primary
+    &::placeholder
+        color: #999999
+
+.form-item
+    margin-bottom: 33px
+    &>._label
+        font-size: 13px
+        color: #777777
+        margin-bottom: 5px
+    &>._field-2
+        margin-top: 5px
+    & label
+        color: #666666
+    &>._error
+        color: $input-error
+        font-size: 12px
+        margin-top: 5px
+        font-weight: 500

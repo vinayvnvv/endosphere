@@ -1,0 +1,53 @@
+.only-mobile {
+  display: none; }
+
+@media screen and (max-width: 960px) {
+  .only-mobile {
+    display: block; } }
+
+.only-mobile-strict {
+  display: none !important; }
+
+@media screen and (max-width: 960px) {
+  .only-mobile-strict {
+    display: block !important; } }
+
+.only-mobile-inline {
+  display: none; }
+
+@media screen and (max-width: 960px) {
+  .only-mobile-inline {
+    display: inline-block; } }
+
+.only-mobile-inline-strict {
+  display: none !important; }
+
+@media screen and (max-width: 960px) {
+  .only-mobile-inline-strict {
+    display: inline-block !important; } }
+
+.only-mobile-inline-flex-strict {
+  display: none !important; }
+
+@media screen and (max-width: 960px) {
+  .only-mobile-inline-flex-strict {
+    display: inline-flex !important; } }
+
+.only-desktop {
+  display: block; }
+
+@media screen and (max-width: 960px) {
+  .only-desktop {
+    display: none; } }
+
+.only-desktop-strict {
+  display: block !important; }
+
+@media screen and (max-width: 960px) {
+  .only-desktop-strict {
+    display: none !important; } }
+
+@media screen and (max-width: 960px) {
+  .flex-grow-mobile {
+    flex-grow: 1;
+    flex-flow: 1; } }

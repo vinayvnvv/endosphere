@@ -1,0 +1,64 @@
+@import './../../../sass/util/mixins.sass'
+@import './../../../sass/util/vars.sass'
+$box-padding-x: 21px
+.Register
+    display: flex
+    justify-content: center
+    padding-top: 31px
+    +media-only-mobile
+        padding-top: 11px
+    &>._box
+        margin: 1px
+        box-shadow: 0px 0px 0px 1px #d9d9d9
+        border-radius: 5px
+        padding: $box-padding-x 0px $box-padding-x 0px
+        animation: flipX 0.334s ease-in-out
+        overflow: hidden
+        +media-only-desktop
+            min-width: 500px
+            min-height: 500px
+            max-width: 500px
+        +media-only-mobile
+            min-width: 100%
+            width: 100%
+            min-height: auto
+            box-shadow: none
+        &>._ttl
+            text-align: center
+            font-size: 20px
+            font-weight: 400
+            letter-spacing: -0.01em
+            margin: 21px 0px
+            padding: 0 $box-padding-x
+            padding-bottom: 17px
+        &>._form-container
+            padding: 0 21px
+            +media-gt-xs
+                max-width: 400px
+                margin: 0 auto
+            &>._actions
+                display: flex
+                justify-content: flex-end
+            &.slideToRight
+                animation: pageSlideToRight 0.19s ease-in
+            &.slideToLeft
+                animation: pageSlideToLeft 0.19s ease-in
+            &>._info
+                margin-bottom: 27px
+                color: #666666
+                text-align: center
+        & ._verify-screen
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            min-height: 320px
+            &>._icon
+                animation: zoomIn 0.354s ease-in
+                &>i
+                    font-size: 93px
+                    color: green
+            &>._ttl
+                font-size: 27px
+                font-weight: 300
+                margin-top: 13px

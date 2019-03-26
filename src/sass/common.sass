@@ -1,0 +1,100 @@
+@import './util/vars.sass'
+@import './util/mixins.sass'
+.text-right
+	text-align: right
+.text-center
+	text-align: center
+
+.display-none
+	display: none
+.display-none-strict
+	display: none!important
+
+.text-success
+	color: $success
+.text-warning
+	color: $warning
+.text-info
+	color: $info
+
+// flex
+.flex
+	display: flex
+.flex-column
+	flex-direction: column
+.inline-flex
+	display: inline-flex
+.flex-align-center
+	align-items: center
+.flex-justify-center
+	justify-content: center
+.flex-center
+	align-items: center
+	justify-content: center
+.flex-justify-end
+	justify-content: flex-end
+.flex-justify-start
+	justify-content: flex-start
+.flex-justify-space-between
+	justify-content: space-between
+.flex-align-end
+	align-items: flex-end
+.flex-align-start
+	align-items: flex-start
+
+
+// dialog style
+.dialog
+	background-color: #ffffff
+	position: absolute
+	outline: none
+	padding: 21px
+	max-width: 500px
+	border-radius: 11px
+	font-family: $font
+	z-index: 999
+	animation: zoomIn 0.23s ease-in-out
+	+media-only-mobile
+		max-width: 80%
+.dialog-overlay
+	position: fixed
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	background-color: #0000007d
+	display: flex
+	align-items: center
+	justify-content: center
+.dialog-msg
+	&>._ttl
+		font-size: 20px
+		font-weight: 400
+		color: #000000
+		+media-only-mobile
+			font-size: 18px
+			font-weight: 500
+	&>._desc
+		margin-top: 9px
+		color: #444444
+		+media-only-mobile
+			font-size: 13px
+	&>._actions
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		margin-top: 19px
+		&>button
+			margin-left: 5px
+
+.error-content
+	color: $input-error
+	font-size: 14px
+	margin: 3px 0px
+	font-weight: 500
+
+.link
+	color: #3b5998
+	cursor: pointer
+	&.disabled
+		pointer-events: none
